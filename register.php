@@ -21,14 +21,28 @@
     <div class="logo-login"><img src="images/logo_white.png" srcset="images/logo_white.png 500w, images/logo_white.png 800w, images/logo_white.png 1080w, images/logo_white.png 5905w" sizes="7vw" alt="" class="image-3">
       <h1 class="heading-3">superfetch</h1>
     </div>
-    <div class="login-button"><a href="#" class="facebook_authentication w-button">LOG IN WITH FACEBOOK</a></div>
+
     <div class="div-block-4">
       <div class="div-block-5"></div>
-      <h1 class="heading-4">OR</h1>
+      <h1 class="heading-4">Register</h1>
       <div class="div-block-5-copy"></div>
     </div>
     <div class="form-block w-form">
-      <form id="email-form" name="email-form" data-name="Email Form" class="form"><input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="" id="name"><input type="email" class="text-field-2 w-input" maxlength="256" name="email" data-name="Email" placeholder="" id="email" required=""><input type="submit" value="LOG IN" data-wait="Please wait..." class="submit-button w-button"></form>
+      <form id="email-form" name="email-form" data-name="Email Form" class="form">
+          
+      <input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="" id="name">
+      
+      <input type="email" class="text-field-2 w-input" maxlength="256" name="email" data-name="Email" placeholder="" id="email" required="">
+      
+      <input type="submit" value="REGISTER" data-wait="Please wait..." class="submit-button w-button" id="actualRegister">
+    
+    </form>
+
+    <div class="register-button">
+        <a href="login.php" id="registerButton">Log-in Here</a
+        >
+    </div>
+    
       <div class="w-form-done">
         <div>Thank you! Your submission has been received!</div>
       </div>

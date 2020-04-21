@@ -22,8 +22,22 @@
   border-width: 1px;
   border-color: #fff;
   border-radius: 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(31, 31, 255, 0.5)), color-stop(100%, #705aff), color-stop(104%, rgba(112, 90, 255, 0.5))), url('../images/hero_image.JPG');
-  background-image: linear-gradient(180deg, rgba(31, 31, 255, 0.5), #705aff 100%, rgba(112, 90, 255, 0.5) 104%), url('../images/hero_image.JPG');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(31, 31, 255, 0.5)),
+      color-stop(100%, #705aff),
+      color-stop(104%, rgba(112, 90, 255, 0.5))
+    ),
+    url('../images/hero_image.JPG');
+  background-image: linear-gradient(
+      180deg,
+      rgba(31, 31, 255, 0.5),
+      #705aff 100%,
+      rgba(112, 90, 255, 0.5) 104%
+    ),
+    url('../images/hero_image.JPG');
   background-position: 0px 0px, 0% 50%;
   background-size: auto, cover;
 }
@@ -137,8 +151,20 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(31, 31, 255, 0.5)), to(rgba(106, 96, 254, 0.75))), url('../images/hero_2.JPG');
-  background-image: linear-gradient(180deg, rgba(31, 31, 255, 0.5), rgba(106, 96, 254, 0.75)), url('../images/hero_2.JPG');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(31, 31, 255, 0.5)),
+      to(rgba(106, 96, 254, 0.75))
+    ),
+    url('../images/hero_2.JPG');
+  background-image: linear-gradient(
+      180deg,
+      rgba(31, 31, 255, 0.5),
+      rgba(106, 96, 254, 0.75)
+    ),
+    url('../images/hero_2.JPG');
   background-position: 0px 0px, 0px 0px;
   background-size: auto, cover;
 }
@@ -187,6 +213,44 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+#loginButton:hover {
+  color: orange;
+  transition: 0.4s;
+}
+#loginFacebook:hover {
+  color: orange;
+  transition: 0.4s;
+}
+.register-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25vw;
+  height: 7vh;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#registerButton {
+  color: white;
+  text-decoration: none;
+}
+#registerButton:hover {
+  color: orange;
+  transition: 0.4s;
+}
+#actualRegister:hover {
+  color: orange;
+  transition: 0.4s;
 }
 
 .button {

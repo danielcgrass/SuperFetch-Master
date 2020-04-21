@@ -1,0 +1,430 @@
+.hero_viewport {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  border-radius: 0px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(31, 31, 255, 0.5)), color-stop(100%, #705aff), color-stop(104%, rgba(112, 90, 255, 0.5))), url('../images/hero_image.JPG');
+  background-image: linear-gradient(180deg, rgba(31, 31, 255, 0.5), #705aff 100%, rgba(112, 90, 255, 0.5) 104%), url('../images/hero_image.JPG');
+  background-position: 0px 0px, 0% 50%;
+  background-size: auto, cover;
+}
+
+.header-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75vw;
+  height: 15vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-family: Orkney, sans-serif;
+  color: #fff;
+  font-size: 50px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+.hero-btn {
+  margin-top: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+  border-radius: 20px;
+  background-color: transparent;
+  font-family: Orkney, sans-serif;
+  font-weight: 500;
+}
+
+.hero-btn:hover {
+  background-color: #705aff;
+}
+
+.image {
+  width: 15%;
+}
+
+.div-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.div-block-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75vw;
+  height: 10vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.heading-2 {
+  font-family: 'Tondu beta', sans-serif;
+  color: #fff;
+  font-weight: 400;
+}
+
+.image-2 {
+  width: 7vw;
+  margin-right: 10px;
+  padding-right: 0px;
+}
+
+.section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(31, 31, 255, 0.5)), to(rgba(106, 96, 254, 0.75))), url('../images/hero_2.JPG');
+  background-image: linear-gradient(180deg, rgba(31, 31, 255, 0.5), rgba(106, 96, 254, 0.75)), url('../images/hero_2.JPG');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+}
+
+.logo-login {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75vw;
+  height: 10vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.heading-3 {
+  font-family: 'Tondu beta', sans-serif;
+  color: #fff;
+  font-weight: 400;
+}
+
+.image-3 {
+  width: 7vw;
+  margin-right: 10px;
+}
+
+.login-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25vw;
+  height: 7vh;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.button {
+  margin-top: 0px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: Orkney, sans-serif;
+}
+
+.div-block-3 {
+  width: 25vw;
+  margin-top: 10px;
+}
+
+.facebook_authentication {
+  margin-top: 0px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: Orkney, sans-serif;
+}
+
+.div-block-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25vw;
+  height: 5vh;
+  margin-top: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.heading-4 {
+  font-family: Orkney, sans-serif;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.div-block-5 {
+  width: 10vw;
+  height: 1px;
+  margin-right: 5px;
+  background-color: #fff;
+}
+
+.div-block-5-copy {
+  width: 10vw;
+  height: 1px;
+  margin-right: 0px;
+  margin-left: 5px;
+  background-color: #fff;
+}
+
+.div-block-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25vw;
+  height: 5vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+.form-block {
+  width: 25vw;
+}
+
+.form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.text-field {
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+.text-field-2 {
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+.submit-button {
+  margin-top: 5px;
+  padding-right: 35px;
+  padding-left: 35px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: Orkney, sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+  .hero_viewport {
+    background-position: 0px 0px, 50% 50%;
+  }
+  .heading-2 {
+    font-size: 35px;
+  }
+  .login-button {
+    width: 50vw;
+  }
+  .facebook_authentication {
+    font-size: 10px;
+    text-align: center;
+  }
+  .heading-4 {
+    font-size: 12px;
+  }
+  .submit-button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .heading {
+    font-size: 45px;
+    line-height: 48px;
+  }
+  .heading-2 {
+    font-size: 25px;
+  }
+  .login-button {
+    width: 50vw;
+  }
+  .facebook_authentication {
+    width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .heading {
+    font-size: 35px;
+    line-height: 38px;
+    text-align: center;
+  }
+  .hero-btn {
+    margin-top: 35px;
+  }
+  .image {
+    margin-bottom: 20px;
+  }
+  .div-block-2 {
+    margin-bottom: 20px;
+  }
+  .heading-2 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .image-2 {
+    width: 10vw;
+  }
+  .login-button {
+    width: 70vw;
+    margin-top: 0px;
+  }
+  .facebook_authentication {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 30px;
+  }
+  .div-block-4 {
+    margin-top: -17px;
+  }
+  .form-block {
+    width: 70vw;
+  }
+}
+
+@font-face {
+  font-family: 'Tondu beta';
+  src: url('../fonts/Tondu_Beta.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Orkney';
+  src: url('../fonts/Orkney-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Orkney';
+  src: url('../fonts/Orkney-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Orkney';
+  src: url('../fonts/Orkney-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Orkney';
+  src: url('../fonts/Orkney-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}

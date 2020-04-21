@@ -1,3 +1,13 @@
+<?php
+  include("includes/config.php");
+  include("includes/classes/Account.php");
+  include("includes/classes/Constants.php");
+  
+  $account = new Account($con);
+  
+  include("includes/handlers/login-handler.php");
+  echo $userLoggedIn;
+?>
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Tue Apr 21 2020 17:18:11 GMT+0000 (Coordinated Universal Time)  -->
@@ -56,36 +66,10 @@
         <div class="div-block-5-copy"></div>
       </div>
       <div class="form-block w-form">
-        <form
-          id="email-form"
-          name="email-form"
-          data-name="Email Form"
-          class="form"
-        >
-          <input
-            type="text"
-            class="text-field w-input"
-            maxlength="256"
-            name="name"
-            data-name="Name"
-            placeholder=""
-            id="name"
-          /><input
-            type="email"
-            class="text-field-2 w-input"
-            maxlength="256"
-            name="email"
-            data-name="Email"
-            placeholder=""
-            id="email"
-            required=""
-          /><input
-            type="submit"
-            value="LOG IN"
-            data-wait="Please wait..."
-            class="submit-button w-button"
-            id="loginButton"
-          />
+        <form id="email-form" name="email-form" data-name="Email Form" class="form" action="login.php" method="POST">
+          <input type="text" class="text-field w-input" maxlength="256" name="loginUsername" data-name="loginUsername" placeholder="Username" id="loginUsername"/>
+          <input type="password" class="text-field w-input" maxlength="256" name="loginPassword" data-name="loginPassword" placeholder="Password" id="loginPassword"/>
+          <input type="submit" value="Submit" name="submitMe" class="submit-button w-button" id="loginButton"/>
         </form>
         <div class="register-button">
         <a href="register.php" id="registerButton">Register Here</a

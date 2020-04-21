@@ -1,10 +1,25 @@
+<?php
+  include("includes/config.php");
+  include("includes/classes/Account.php");
+  include("includes/classes/Constants.php");
+
+  $account = new Account($con);
+
+  include("includes/handlers/register-handler.php");
+
+  function getInputValue($name) {
+    if(isset($_POST[$name])) {
+      echo $_POST[$name];
+    }
+ }
+?>
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Tue Apr 21 2020 17:18:11 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5e9f226aef1e71542fe4414a" data-wf-site="5e9f1c8e257b5c39af711556">
 <head>
   <meta charset="utf-8">
-  <title>Login</title>
+  <title>Register</title>
   <meta content="Login" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
@@ -28,13 +43,17 @@
       <div class="div-block-5-copy"></div>
     </div>
     <div class="form-block w-form">
-      <form id="email-form" name="email-form" data-name="Email Form" class="form">
+      <form id="email-form" name="email-form" data-name="Email Form" class="form" action="register.php" method="POST">
           
-      <input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="" id="name">
+      <input type="text" class="text-field w-input" maxlength="256" name="firstName" placeholder="First Name">
+      <input type="text" class="text-field w-input" maxlength="256" name="lastName" placeholder="Last Name">
+      <input type="text" class="text-field w-input" maxlength="256" name="username" placeholder="Username">
+      <input type="email" class="text-field w-input" maxlength="256" name="email" placeholder="Email">
+      <input type="password" class="text-field w-input" maxlength="256" name="pass" placeholder="Password">
+      <input type="password" class="text-field w-input" maxlength="256" name="pass2" placeholder="Confirm Password">
+
       
-      <input type="email" class="text-field-2 w-input" maxlength="256" name="email" data-name="Email" placeholder="" id="email" required="">
-      
-      <input type="submit" value="REGISTER" data-wait="Please wait..." class="submit-button w-button" id="actualRegister">
+      <input type="submit" value="Submit" name="submitRegister" class="submit-button w-button" id="actualRegister">
     
     </form>
 
@@ -43,12 +62,17 @@
         >
     </div>
     
-      <div class="w-form-done">
-        <div>Thank you! Your submission has been received!</div>
-      </div>
-      <div class="w-form-fail">
-        <div>Oops! Something went wrong while submitting the form.</div>
-      </div>
+    <div class="text-center text-white w-full p-t-23">
+             <?php echo $account->getError(Constants::$usernameNotEnough); ?>
+             <?php echo $account->getError(Constants::$firstNameNotEnough); ?>
+             <?php echo $account->getError(Constants::$lastNameNotEnough); ?>
+             <?php echo $account->getError(Constants::$emailNotValid); ?>
+             <?php echo $account->getError(Constants::$passwordsDoNotMatch); ?>
+             <?php echo $account->getError(Constants::$passwordMustContain); ?>
+             <?php echo $account->getError(Constants::$passwordNotEnough); ?>
+             <?php echo $account->getError(Constants::$usernameStolen); ?>
+             <?php echo $account->getError(Constants::$emailStolen); ?>
+            </div>
     </div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5e9f1c8e257b5c39af711556" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

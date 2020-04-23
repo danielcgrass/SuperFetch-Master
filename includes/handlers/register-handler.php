@@ -26,9 +26,13 @@
 
     $wasSuccessful = $account->register($un, $fn, $ln, $em, $pw, $pw2);
 
-    if($wasSuccessful == true) {
-        $_SESSION['userLoggedIn'] = $username;
-        header("Location: home.php");
+    if($wasSuccessful == 1) {
+        $_SESSION['userLoggedIn'] = $un;
+        header('Location: home.php');
+        echo "Was Successful: " . $wasSuccessful;
       }
+    else {
+      echo "something went wrong";
+    }
   }
 ?>

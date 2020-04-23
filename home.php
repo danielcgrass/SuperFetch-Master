@@ -8,7 +8,7 @@ if(isset($_SESSION['userLoggedIn'])){
   echo $userLoggedIn . ", ";
 }
 else {
-  header("Location: register.php");
+ header('Location: register.php');
 }
   
 ?>
